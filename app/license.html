@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/66f2e61ac8.js" crossorigin="anonymous"></script>
+    <script src="js/sidenavMenu.js"></script>
+</head>
+<body>
+    <div id="container">
+        <nav>
+            <div id="titleShown"></div>
+            <div id="buttons">
+                <div id="minimize">
+                    <span><i class="fas fa-window-minimize"></i></span>
+                </div>
+                <div id="maximize">
+                    <span>+</span>
+                </div>
+                <div id="close">
+                    <span><i class="fas fa-times"></i></span>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div id="content">
+                <span class="slide">
+                    <a href="#" onclick="openSlideMenu()">
+                    <i class="fas fa-bars"></i>
+                    </a>
+                </span>
+            <div id="menu" class="nav">
+                    <a href="#" class="close" onclick="closeSlideMenu()">
+                    <i class="fas fa-times"></i>
+                    </a>
+                    <a href="index.html">Home</a>
+                    <a href="#">GitHub</a>
+                    <a href="#">License</a>
+                    <a href="contact.html">Contact</a>
+            </div>
+            <div id="licCont">
+                <p>MIT License</p>
+            <br><br>
+            <p>Copyright (c) 2020 Konohamaru04</p>
+            <br><br>
+            <p>Permission is hereby granted, free of charge, to any person obtaining a copy <br>
+                of this software and associated documentation files (the "Software"), to deal <br>
+                in the Software without restriction, including without limitation the rights <br>
+                to use, copy, modify, merge, publish, distribute, sublicense, and/or sell <br>
+                copies of the Software, and to permit persons to whom the Software is <br>
+                furnished to do so, subject to the following conditions:</p>
+                <br><br>
+            <p>The above copyright notice and this permission notice shall be included in all <br>
+                copies or substantial portions of the Software.
+            </p>
+            <br><br>
+            <p>
+            THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR <br>
+            IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, <br>
+            FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE <br>
+            AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER <br>
+            LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, <br>
+            OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE <br>
+            SOFTWARE.
+            </p>
+            <br><br>
+            </div>
+            </div>
+        </main>
+    </div>
+    <div class="bottom">
+        <p id="devName"></p>
+    </div>
+
+    
+
+    <script src="js/init.js"></script>
+    <script src="js/menuHandler.js"></script>
+
+</body>
+</html>
