@@ -1,0 +1,23 @@
+{
+  "name": "wallpaper-engine",
+  "version": "1.0.0",
+  "description": "Wallpaper Engine V 1.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Konohamaru04/Wallpaper-Engine-GUI.git"
+  },
+  "author": "Amartya Deshmukh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Konohamaru04/Wallpaper-Engine-GUI/issues"
+  },
+  "homepage": "https://github.com/Konohamaru04/Wallpaper-Engine-GUI#readme",
+  "dependencies": {
+    "electron": "^8.2.1",
+    "jquery": "^3.5.0"
+  }
+}
