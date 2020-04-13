@@ -16,7 +16,7 @@ function createWindow(){
         }
     });
 
-    //win.openDevTools();
+    win.openDevTools();
 
     win.loadURL(url.format({
         pathname: path.join(__dirname, APP_DIR, 'index.html'),
@@ -31,4 +31,6 @@ app.on('window-all-closed', () => {
     if(process.platform !== 'darwin'){
         app.quit();
     }
+
+    
 });

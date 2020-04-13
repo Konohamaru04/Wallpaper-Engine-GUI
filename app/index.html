@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="title"></title>
+    <title id="title">Wallpaper-Engine</title>
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/menu.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/66f2e61ac8.js" crossorigin="anonymous"></script>
@@ -29,7 +29,7 @@
 <div id="content">
     <span class="slide">
         <a href="#" onclick="openSlideMenu()">
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-bars" id="bars"></i>
         </a>
     </span>
     <div id="menu" class="nav">
@@ -37,21 +37,34 @@
             <i class="fas fa-times"></i>
         </a>
         <a href="#">Home</a>
-        <a href="#">GitHub</a>
+        <a href="github.html">GitHub</a>
         <a href="license.html">License</a>
         <a href="contact.html">Contact</a>
     </div>
-</div>
+                <center>
+                <p id="videoSelect" style="font-weight: bold; font-size: 30px;">Select a video</p><br>
+                <span class="">
+                    <input class="" type="text" placeholder="Ex: video.mp4" id="frameCreator">
+                </span>
+                <span><button class="button5 btn" onclick="run_framecreator()">Select</button></span>
+                <div id="bText">
+                    <p>Processing...</p>
+                 </div>
+                
+
+                <p id="videoSelect" style="font-weight: bold; font-size: 30px;">Start Wallpaper-Engine</p><br>
+                <span><button class="button5 btn" onclick="loopPro(1)" id="start">Start</button></span>
+                <span><button class="button5 btn" onclick="loopPro(0)" id="stop">Stop</button></span>
+                </center>
         </main>
     </div>
     <div class="bottom">
         <p id="devName"></p>
     </div>
-
-    
-
     <script src="js/init.js"></script>
     <script src="js/menuHandler.js"></script>
+    <script src="js/framecreator.js"></script>
+    <script src="js/loopHandler.js"></script>
 
 </body>
 </html>

@@ -18,6 +18,8 @@
   "homepage": "https://github.com/Konohamaru04/Wallpaper-Engine-GUI#readme",
   "dependencies": {
     "electron": "^8.2.1",
-    "jquery": "^3.5.0"
+    "jquery": "^3.5.0",
+    "python-shell": "^1.0.8",
+    "sweetalert": "^2.1.2"
   }
 }
