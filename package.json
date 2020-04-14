@@ -2,7 +2,7 @@
   "name": "wallpaper-engine",
   "productName": "Wallpaper-Engine",
   "version": "1.0.0",
-  "description": "Wallpaper Engine V 1.0",
+  "description": "",
   "main": "app.js",
   "scripts": {
     "start": "electron ."
@@ -23,7 +23,5 @@
     "python-shell": "^1.0.8",
     "sweetalert": "^2.1.2"
   },
-  "devDependencies": {
-    "electron-packager": "^14.2.1"
-  }
+  "devDependencies": {}
 }
