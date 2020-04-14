@@ -1,10 +1,12 @@
 {
   "name": "wallpaper-engine",
+  "productName": "Wallpaper-Engine",
   "version": "1.0.0",
   "description": "Wallpaper Engine V 1.0",
   "main": "app.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "package-win": "electron-packager . wallpaper-engine --overwrite --asar=true --platform=win32 --arch=ia32 --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Wallpaper-Engine\""
   },
   "repository": {
     "type": "git",
@@ -21,5 +23,8 @@
     "jquery": "^3.5.0",
     "python-shell": "^1.0.8",
     "sweetalert": "^2.1.2"
+  },
+  "devDependencies": {
+    "electron-packager": "^14.2.1"
   }
 }
