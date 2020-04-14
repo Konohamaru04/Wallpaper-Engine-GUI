@@ -11,7 +11,7 @@
 5. Run command " npm install electron --save " to install electron
 6. Run Command " npm install python-shell --save "
 7. Run Command " pip install opencv-python "
-8. pun Command " npm start " to start execution
+8. Run Command " npm start " to start execution
 
 # Important
 
