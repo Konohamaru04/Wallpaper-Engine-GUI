@@ -1,6 +1,6 @@
 #Requirements : 
-NodeJS
-Python3
+. NodeJS
+. Python3
 
 #How to Run :
 
