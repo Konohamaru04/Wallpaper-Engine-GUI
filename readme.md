@@ -7,8 +7,8 @@ Python3
 1. Install Python3 and add it to PATH
 2. Install NodeJS and add it to PATH
 3. Clone this project
-4. Run " req.bat " file to install all necessary components
-5. Run " electron.bat " file to install electron
+4. Run " electron.bat " file to install electron
+5. Run " req.bat " file to install all necessary components 
 6. Run " startApp.bat " file to run the programs
 
 #Important#
