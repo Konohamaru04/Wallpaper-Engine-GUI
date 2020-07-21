@@ -2,7 +2,7 @@
 * NodeJS
 * Python3
 
-#How to Run :
+# How to Run :
 
 1. Install Python3 and add it to PATH
 2. Install NodeJS and add it to PATH
