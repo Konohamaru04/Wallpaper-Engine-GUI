@@ -8,7 +8,7 @@ from tqdm import tqdm
 
 def create_frames(video, frames):
     if video.isOpened() == False:
-        print("Error opening video.")
+        print("69")
         input()
         return False
 
@@ -18,7 +18,6 @@ def create_frames(video, frames):
     if frames == None or frames == "":
         frames = total_frames
     elif frames > total_frames:
-        print("The amount of frames needs to be less than the total amount in the video.")
         input()
         return False
 

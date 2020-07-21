@@ -1,13 +1,7 @@
-var file = 28;
-var options = {
-    scriptPath : path.join(__dirname, '/python/'),
-    args : [file]
-}
-
-let pyshell;
-
 document.getElementById('stop').disabled = true;
 document.getElementById('start').disabled = false;
+
+//alert(options.pythonPath);
 
 function loopPro(ele) {
 
@@ -17,6 +11,7 @@ function loopPro(ele) {
         document.getElementById('stop').disabled = false;
         pyshell = new PythonShell('loophandler.py', options);
         pyshell.on('message', function(message){
+            console.log('Frames Processing started !')
     });
     }
 
@@ -25,6 +20,7 @@ function loopPro(ele) {
         document.getElementById('stop').disabled = true;
         document.getElementById('start').disabled = false;
         pyshell.terminate();
+        console.log('Frames processing stopped !')
     }
     else
     {

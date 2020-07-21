@@ -6,7 +6,7 @@
     <title id="title">Wallpaper-Engine</title>
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/menu.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/66f2e61ac8.js" crossorigin="anonymous"></script>
+    <script src="js/fontAwesome.js" crossorigin="anonymous"></script>
     <script src="js/sidenavMenu.js"></script>
 </head>
 <body>
@@ -15,13 +15,13 @@
             <div id="titleShown"></div>
             <div id="buttons">
                 <div id="minimize">
-                    <span><i class="fas fa-window-minimize"></i></span>
+                    <span>_</span>
                 </div>
                 <div id="maximize">
                     <span>+</span>
                 </div>
                 <div id="close">
-                    <span><i class="fas fa-times"></i></span>
+                    <span>X</span>
                 </div>
             </div>
         </nav>
@@ -45,13 +45,14 @@
         <center>
             <p id="videoSelect" style="font-weight: bold; font-size: 40px;">Select a video</p><br>
             <span class="">
-                <input class="" type="text" placeholder="Ex: video.mp4" id="frameCreator">
+                <input type="text" placeholder="Ex: video.mp4" id="frameCreator">
             </span>
             <span><button class="button5 btn" onclick="run_framecreator()">Select</button></span>
             <div id="bText">
                 <div class="loader">
                     <div class="loaderBar"></div>
                 </div>
+                <p id="progress"></p>
              </div>
             <p id="videoSelect" style="font-weight: bold; font-size: 40px;">Start Wallpaper-Engine</p><br>
             <span><button class="button5 btn" onclick="loopPro(1)" id="start">Start</button></span>

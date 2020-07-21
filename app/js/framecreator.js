@@ -1,7 +1,3 @@
-var {PythonShell} = require('python-shell');
-var path = require('path');
-var pro = document.getElementById('bText');
-
 function run_framecreator() {
     var file = document.getElementById('frameCreator').value;
     var options = {
@@ -9,13 +5,17 @@ function run_framecreator() {
         args : [file]
     }
     pro.style.display = 'block';
-    let pyshell = new PythonShell('frameCreator.py', options);
-    
+    pyshell = new PythonShell('frameCreator.py', options);
     pyshell.on('message', function(message){
+    
+    if(message === '69')
+    {
+        alert('Error opening video.');
+    }
     if(message === '100')
     {
         pro.style.display = 'none';
-        alert("Success !");
+        alert("Video loaded successfully !");
     }
     }); 
     document.getElementById('frameCreator').value = "";

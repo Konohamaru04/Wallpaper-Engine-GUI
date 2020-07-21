@@ -45,6 +45,7 @@
     text-align: center;
     color: #f7f7f7;
     transition: all ease-in-out .2s;
+    font-weight: bolder;
 }
 
 #buttons #maximize{
@@ -54,6 +55,7 @@
     text-align: center;
     color: #f7f7f7;
     transition: all ease-in-out .2s;
+    font-weight: bolder;
 }
 
 #buttons #close{
@@ -63,6 +65,7 @@
     text-align: center;
     color: #f7f7f7;
     transition: all ease-in-out .2s;
+    font-weight: bolder;
 }
 
 #buttons #minimize:hover {
@@ -269,4 +272,23 @@
     }
   }
   
+  #progress {
+    width: 30%;
+    height: 100%;
+    line-height: 30px;
+    color: #f7f7f7;
+    font-size: 1.2em;
+    font-weight: bold;
+    float: right;
+    padding: 0 1em 0 0;
+    align-content: center;
+  }
 
+input [type=text]{
+    width: 100%;
+    padding: 15px 22px;
+    margin: 10px 5px;
+    border: 4px solid #555555;
+    border-radius: 10px;
+    background-color: #333333;
+}
