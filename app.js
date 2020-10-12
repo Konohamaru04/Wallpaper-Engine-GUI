@@ -8,8 +8,8 @@ var APP_DIR = '/app/';
 
 function createWindow(){
     win = new BrowserWindow({
-        width:1000,
-        height:600,
+        width:500,
+        height:800,
         frame: false,
         webPreferences: {
             nodeIntegration: true

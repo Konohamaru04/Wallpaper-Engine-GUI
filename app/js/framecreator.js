@@ -1,24 +1,21 @@
-function run_framecreator() {
-    var file = document.getElementById('frameCreator').value;
-    var options = {
-        scriptPath : path.join(__dirname, '/python/'),
-        args : [file]
-    }
+
+function run_framecreator1() {
+    console.log("Framecreator");
     pro.style.display = 'block';
-    pyshell = new PythonShell('frameCreator.py', options);
-    pyshell.on('message', function(message){
-    
-    if(message === '69')
-    {
-        alert('Error opening video.');
-    }
-    if(message === '100')
-    {
-        pro.style.display = 'none';
-        alert("Video loaded successfully !");
-    }
-    }); 
-    document.getElementById('frameCreator').value = "";
+    exec("frameCreator.exe", function (err, data) {
+        console.log(err);
+        console.log(data);
+
+        if (parseInt(data) == 69) {
+            pro.style.display = 'none';
+            alert('Error opening video.');
+        }
+        if (parseInt(data) == 100) {
+            pro.style.display = 'none';
+            alert("Video loaded successfully !");
+        }
+
+    });
 }
 
 
