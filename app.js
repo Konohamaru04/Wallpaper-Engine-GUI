@@ -7,10 +7,11 @@ let win;
 var APP_DIR = '/app/';
 
 function createWindow(){
+
     win = new BrowserWindow({
         width:500,
         height:800,
-        frame: false,
+       frame:false,
         webPreferences: {
             nodeIntegration: true
         }
@@ -23,14 +24,22 @@ function createWindow(){
         protocol: 'file:',
         slashes: true
     }));
+    
+    win.on('closed', function(){ 
+
+        app.quit() 
+
+    
+
+  }); 
 }
 
 app.on('ready', createWindow);
 
 app.on('window-all-closed', () => {
-    if(process.platform !== 'darwin'){
+    
         app.quit();
-    }
+    
 
     
 });
